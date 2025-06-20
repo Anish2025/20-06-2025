@@ -172,9 +172,18 @@ $$
 $$
 
 Where:
-- \( \theta \): model parameter vector
-- \( \alpha \): learning rate
-- \( J(\theta) \): loss function
+
+$$
+\( \theta \):  model parameter vector
+$$
+
+$$
+ \( \alpha \): learning rate
+$$
+
+$$
+\( J(\theta) \): loss function
+$$
 
 ---
 
@@ -280,7 +289,7 @@ In neural networks:
 
 ---
 
-## 🛠 10. Practical Tips
+## 10. Practical Tips
 
 - Use symbolic tools like **SymPy** to derive expressions.
 - Use **automatic differentiation** libraries (PyTorch, TensorFlow).
