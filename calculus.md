@@ -36,6 +36,7 @@ Used for polynomial terms and cost functions.
 $$
 \frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
 $$  
+
 $$
 \frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
 $$  
@@ -46,6 +47,7 @@ Essential for backpropagation in neural networks.
 $$
 \frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
 $$  
+
 $$
 \frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
 $$ 
@@ -63,6 +65,7 @@ Helpful when dividing functions in normalized outputs.
 $$
 \frac{d}{dx}[e^{f(x)}] = e^{f(x)} \cdot f'(x)
 $$  
+
 Used in softmax, attention mechanisms, and regularization terms.
 
 ### Logarithmic Rule
