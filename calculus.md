@@ -212,11 +212,13 @@ $$
 ### Softmax Derivative
 
 Let:
+
 $$
 \sigma_i = \frac{e^{z_i}}{\sum_j e^{z_j}}
 $$
 
 Then:
+
 $$
 \frac{\partial \sigma_i}{\partial z_k} = \sigma_i (\delta_{ik} - \sigma_k)
 $$
@@ -232,6 +234,7 @@ Used in:
 Backpropagation relies heavily on the **chain rule**.
 
 If:
+
 $$
 L = f(g(x)) \quad \Rightarrow \quad \frac{dL}{dx} = \frac{dL}{dg} \cdot \frac{dg}{dx}
 $$
