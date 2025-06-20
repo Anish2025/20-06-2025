@@ -1,10 +1,10 @@
-# 🧠 Differential Calculus Cheatsheet for AI/ML (Extended)
+# Differential Calculus Cheatsheet for AI/ML
 
 > Mastering derivatives is foundational for understanding gradients, loss optimization, and backpropagation in modern ML models.
 
 ---
 
-## ✏️ 1. Basic Derivative Definition
+## 1. Basic Derivative Definition
 
 The derivative of a function \( f(x) \) measures how it changes with respect to \( x \). It is defined as:
 
@@ -18,7 +18,7 @@ $$
 
 ---
 
-## 🔄 2. Fundamental Derivative Rules
+## 2. Fundamental Derivative Rules
 
 ### Power Rule
 
@@ -71,7 +71,7 @@ Common in log-likelihood and entropy-based loss functions.
 
 ---
 
-## 🔣 3. Derivatives of Key ML Functions
+## 3. Derivatives of Key ML Functions
 
 ### Sigmoid Activation
 $$
@@ -105,7 +105,7 @@ $$
 
 ---
 
-## 🧮 4. Partial Derivatives
+## 4. Partial Derivatives
 
 Used when functions have multiple inputs.
 
@@ -141,7 +141,7 @@ $$
 
 ---
 
-## 🧭 5. Gradient Vector ( ∇f )
+## 5. Gradient Vector ( ∇f )
 
 The gradient is a vector of partial derivatives for multivariable functions.
 
@@ -178,7 +178,7 @@ Where:
 
 ---
 
-## 🧾 6. Jacobian Matrix
+## 6. Jacobian Matrix
 
 The Jacobian generalizes the gradient to vector-valued functions.
 
@@ -201,7 +201,7 @@ Used in:
 
 ---
 
-## 🧠 7. Hessian Matrix
+## 7. Hessian Matrix
 
 Second-order derivatives that represent curvature of a function.
 
@@ -215,7 +215,7 @@ $$
 
 ---
 
-## 💡 8. ML-Specific Derivative Expressions
+## 8. ML-Specific Derivative Expressions
 
 ### Dot Product Derivative
 
@@ -264,7 +264,7 @@ Used in:
 
 ---
 
-## 🔁 9. Backpropagation
+## 9. Backpropagation
 
 Backpropagation relies heavily on the **chain rule**.
 
@@ -288,7 +288,7 @@ In neural networks:
 
 ---
 
-## 📌 Summary
+## Summary
 
 - **Derivative** → Instant rate of change
 - **Partial Derivative** → Change wrt one input in multivariable function
