@@ -143,6 +143,7 @@ $$
  \( \frac{\partial J}{\partial b} \)
 $$
 
+[Partial Derivatives Explanation](https://youtu.be/KnVNFj53Eq4?si=9Vv9P-78SDnl_0i_)
 ---
 
 ## 5. Gradient Vector ( ∇f )
