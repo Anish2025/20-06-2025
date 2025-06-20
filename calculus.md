@@ -77,7 +77,7 @@ Common in log-likelihood and entropy-based loss functions.
 
 ## 3. Derivatives of Key ML Functions
 
-### Sigmoid Activation
+### Sigmoid Activation [Explanation](https://youtu.be/TPqr8t919YM?si=dBlESpGjOuIGyfjo)
 $$
 \sigma(x) = \frac{1}{1 + e^{-x}} \\
 \frac{d\sigma}{dx} = \sigma(x)(1 - \sigma(x))
