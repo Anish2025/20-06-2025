@@ -1,86 +1,145 @@
-# 🧠 Differential Calculus Cheatsheet for AI/ML
+# 🧠 Differential Calculus Cheatsheet for AI/ML (Extended)
 
-> **Why It Matters in AI/ML**: Differential calculus powers optimization—used in gradient descent, backpropagation, cost minimization, etc.
+> Mastering derivatives is foundational for understanding gradients, loss optimization, and backpropagation in modern ML models.
 
 ---
 
-## ✏️ Basics of Derivatives
+## ✏️ 1. Basic Derivatives Recap
 
-**Definition**  
-The derivative of a function \( f(x) \) is:  
-\[
+### Definition:
+$$
 f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
-\]
+$$
 
-**Interpretation**:  
-- Measures rate of change (slope)  
-- Tangent to the curve at point \( x \)
-
----
-
-## ⚙️ Common Derivative Rules
-
-| Rule Name         | Formula                                      | Example                            |
-|------------------|----------------------------------------------|------------------------------------|
-| Power Rule        | \( \frac{d}{dx}[x^n] = nx^{n-1} \)            | \( \frac{d}{dx}[x^3] = 3x^2 \)     |
-| Constant Rule     | \( \frac{d}{dx}[c] = 0 \)                     | \( \frac{d}{dx}[5] = 0 \)          |
-| Constant Mult.    | \( \frac{d}{dx}[cf(x)] = c f'(x) \)           | \( \frac{d}{dx}[3x^2] = 6x \)      |
-| Sum Rule          | \( \frac{d}{dx}[f + g] = f' + g' \)           | \( \frac{d}{dx}[x^2 + e^x] = 2x + e^x \) |
-| Product Rule      | \( \frac{d}{dx}[fg] = f'g + fg' \)            | \( \frac{d}{dx}[x \cdot \ln x] \)  |
-| Quotient Rule     | \( \frac{d}{dx}\left[\frac{f}{g}\right] = \frac{f'g - fg'}{g^2} \) | \( \frac{d}{dx}\left[\frac{1}{x}\right] = -\frac{1}{x^2} \) |
-| Chain Rule        | \( \frac{d}{dx}f(g(x)) = f'(g(x)) \cdot g'(x) \) | \( \frac{d}{dx}[\sin(x^2)] = \cos(x^2) \cdot 2x \) |
+- Measures **instantaneous rate of change** (slope)
+- Fundamental to **gradient-based optimization**
 
 ---
 
-## 🔣 Derivatives of Common Functions
+## 🔄 2. Derivative Rules (Quick Reference)
 
-| Function       | Derivative         |
-|----------------|--------------------|
-| \( x^n \)       | \( nx^{n-1} \)      |
-| \( \ln x \)     | \( \frac{1}{x} \)   |
-| \( e^x \)       | \( e^x \)           |
-| \( \sin x \)    | \( \cos x \)        |
-| \( \cos x \)    | \( -\sin x \)       |
-| \( \tan x \)    | \( \sec^2 x \)      |
-
----
-
-## 📈 Higher Order Derivatives
-
-- 2nd Derivative: \( f''(x) = \frac{d^2f}{dx^2} \)
-- Use: Concavity, acceleration, local min/max detection
+| Rule Type       | Formula | Description |
+|----------------|---------|-------------|
+| Power Rule     | \( \frac{d}{dx}[x^n] = nx^{n-1} \) | For polynomial terms |
+| Chain Rule     | \( \frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x) \) | Backpropagation core |
+| Product Rule   | \( \frac{d}{dx}[fg] = f'g + fg' \) | Needed for loss * activation |
+| Quotient Rule  | \( \frac{d}{dx}\left[\frac{f}{g}\right] = \frac{f'g - fg'}{g^2} \) | Used with division terms |
+| Exponential    | \( \frac{d}{dx}[e^{f(x)}] = e^{f(x)} \cdot f'(x) \) | Appears in softmax, regularization |
+| Logarithmic    | \( \frac{d}{dx}[\ln(f(x))] = \frac{f'(x)}{f(x)} \) | Key in log-likelihood loss |
 
 ---
 
-## 🧮 Applications in AI/ML
+## 🔣 3. Derivatives of Key ML Functions
 
-| Concept                | Use                                                |
-|------------------------|-----------------------------------------------------|
-| Gradient Descent       | Uses partial derivatives to update weights          |
-| Cost Function Optimization | Find minimum using \( \nabla J(\theta) \)    |
-| Backpropagation        | Applies chain rule through layers                   |
-| Jacobian Matrix        | Partial derivatives of vector-valued functions      |
-| Hessian Matrix         | Matrix of second-order derivatives (curvature info) |
-
----
-
-## 🔍 Tips & Tricks
-
-- Use tools like **SymPy**, **NumPy**, or **WolframAlpha** for symbolic derivation
-- Always simplify functions before differentiating
-- For multivariable calculus, learn **partial derivatives**
+| Function         | Derivative                              | Application                      |
+|------------------|------------------------------------------|----------------------------------|
+| \( \sigma(x) = \frac{1}{1 + e^{-x}} \) | \( \sigma(x)(1 - \sigma(x)) \)       | Sigmoid activation               |
+| \( \tanh(x) \)    | \( 1 - \tanh^2(x) \)                     | RNNs/Activations                 |
+| \( \text{ReLU}(x) \) | \( 1 \text{ if } x > 0, \ 0 \text{ otherwise} \) | CNNs/Activations          |
+| \( \log(x) \)     | \( \frac{1}{x} \)                        | Cross-entropy, likelihood        |
+| \( e^x \)         | \( e^x \)                                | Softmax, regularization          |
 
 ---
 
-## 📘 Example: Gradient Descent
+## 🧮 4. Partial Derivatives (Multivariable Calculus)
 
-\[
-\theta := \theta - \alpha \cdot \frac{\partial J(\theta)}{\partial \theta}
-\]
+For a function \( f(x, y) \), the **partial derivative** with respect to \( x \) is:
+$$
+\frac{\partial f}{\partial x} = \lim_{h \to 0} \frac{f(x + h, y) - f(x, y)}{h}
+$$
 
-Where:
-- \( J(\theta) \): Loss function  
-- \( \alpha \): Learning rate  
-- \( \frac{\partial J}{\partial \theta} \): Gradient of loss wrt parameters  
+Used when functions depend on multiple variables (weights, inputs).
+
+**Example**:  
+Given a loss function \( J(w, b) \), compute:
+- \( \frac{\partial J}{\partial w} \) (gradient w.r.t weights)
+- \( \frac{\partial J}{\partial b} \) (gradient w.r.t bias)
 
 ---
+
+## 🧭 5. Gradient Vector (∇f)
+
+For a scalar-valued function \( f: \mathbb{R}^n \to \mathbb{R} \), the **gradient** is:
+$$
+\nabla f(\mathbf{x}) = \left[ \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \dots, \frac{\partial f}{\partial x_n} \right]^T
+$$
+
+- Points in the direction of **steepest ascent**
+- Used in **gradient descent**:  
+  $$
+  \theta := \theta - \alpha \cdot \nabla J(\theta)
+  $$
+
+---
+
+## 🧾 6. Jacobian Matrix
+
+For a vector-valued function \( \mathbf{f}: \mathbb{R}^n \to \mathbb{R}^m \), the **Jacobian** is:
+$$
+J_{ij} = \frac{\partial f_i}{\partial x_j}
+$$
+
+- Shape: \( m \times n \)
+- Used in **vector-valued backpropagation**, e.g. in deep learning frameworks.
+
+---
+
+## 🧠 7. Hessian Matrix
+
+Second-order partial derivatives:
+$$
+H_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}
+$$
+
+- Matrix of curvature
+- Used in **Newton’s Method**, convex optimization
+- Costly in high dimensions, but useful for understanding local behavior
+
+---
+
+## 💡 8. Useful Derivatives in ML
+
+| Expression                           | Derivative                                         |
+|--------------------------------------|----------------------------------------------------|
+| \( \mathbf{w}^T \mathbf{x} \)         | \( \frac{d}{d\mathbf{w}} = \mathbf{x} \)           |
+| \( ||\mathbf{w}||^2 \)               | \( \frac{d}{d\mathbf{w}} = 2\mathbf{w} \)          |
+| \( \log(\sigma(x)) \)                | \( \frac{1}{\sigma(x)} \cdot \sigma(x)(1 - \sigma(x)) = 1 - \sigma(x) \) |
+| Softmax: \( \sigma_i = \frac{e^{z_i}}{\sum_j e^{z_j}} \) |  
+\( \frac{\partial \sigma_i}{\partial z_k} = \sigma_i (\delta_{ik} - \sigma_k) \) | Cross-entropy + softmax combo
+
+---
+
+## 🔁 9. Backpropagation Essentials
+
+- Derivatives are propagated backward using **chain rule**:
+  $$
+  \frac{dL}{dx} = \frac{dL}{dy} \cdot \frac{dy}{dx}
+  $$
+
+- Applies layer by layer in neural networks:
+  - Forward pass: compute activations
+  - Backward pass: compute gradients using chain rule
+
+---
+
+## 🛠 10. Tips for Working with Derivatives in ML
+
+- Use **symbolic differentiation** (e.g., SymPy) for derivation
+- Use **automatic differentiation** (e.g., PyTorch, TensorFlow) in practice
+- Understand how to derive manually for interpretability and debugging
+
+---
+
+## 📌 Summary
+
+| Concept             | Symbol / Tool           | Usage in ML                           |
+|---------------------|--------------------------|----------------------------------------|
+| Derivative          | \( \frac{df}{dx} \)       | 1D gradients                          |
+| Partial Derivative  | \( \frac{\partial f}{\partial x_i} \) | Multivariable models             |
+| Gradient            | \( \nabla f \)            | Optimization direction                |
+| Jacobian            | \( \frac{\partial \mathbf{f}}{\partial \mathbf{x}} \) | Vector-valued loss functions |
+| Hessian             | \( \nabla^2 f \)          | Curvature for 2nd-order methods       |
+
+---
+
+
