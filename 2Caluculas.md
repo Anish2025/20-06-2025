@@ -249,24 +249,82 @@ $$
 
 ### Common Function Derivatives
 
-- \( \frac{d}{dx}[e^x] = e^x \)
-- \( \frac{d}{dx}[\log(x)] = \frac{1}{x} \)
-- \( \frac{d}{dx}[\tanh(x)] = 1 - \tanh^2(x) \)
-- \( \frac{d}{dx}[\sigma(x)] = \sigma(x)(1 - \sigma(x)) \)
-- \( \frac{d}{dx}[\text{ReLU}(x)] = 1 \text{ if } x > 0; 0 \text{ otherwise} \)
+-
 
+   $$
+  \( \frac{d}{dx}[e^x] = e^x \)
+  $$
+
+  -
+
+   $$
+ \( \frac{d}{dx}[\log(x)] = \frac{1}{x} \)
+  $$
+
+  -
+
+   $$
+  \( \frac{d}{dx}[\tanh(x)] = 1 - \tanh^2(x) \)
+  $$
+
+  -
+
+   $$
+  \( \frac{d}{dx}[\sigma(x)] = \sigma(x)(1 - \sigma(x)) \)
+  $$
+
+  -
+
+   $$
+  \( \frac{d}{dx}[\text{ReLU}(x)] = 1 \text{ if } x > 0; 0 \text{ otherwise} \)
+  $$
+  
 ### Vectors & Matrices
+ -
 
-- \( \nabla f = \left[ \frac{\partial f}{\partial x_1}, \dots, \frac{\partial f}{\partial x_n} \right]^T \)
-- \( J_{ij} = \frac{\partial f_i}{\partial x_j} \)
-- \( H_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j} \)
+   $$
+ \( \nabla f = \left[ \frac{\partial f}{\partial x_1}, \dots, \frac{\partial f}{\partial x_n} \right]^T \)
+  $$
+
+ -
+
+   $$
+  \( J_{ij} = \frac{\partial f_i}{\partial x_j} \)
+  $$
+
+   -
+
+   $$
+  \( H_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j} \)
+  $$
+
 
 ### ML-specific
 
-- \( \frac{d}{d\mathbf{w}}(\mathbf{w}^T \mathbf{x}) = \mathbf{x} \)
-- \( \frac{d}{d\mathbf{w}}(||\mathbf{w}||^2) = 2\mathbf{w} \)
-- \( \frac{d}{dx}[\log(\sigma(x))] = 1 - \sigma(x) \)
-- \( \frac{\partial \sigma_i}{\partial z_k} = \sigma_i (\delta_{ik} - \sigma_k) \)
+ -
+
+   $$
+ \( \frac{d}{d\mathbf{w}}(\mathbf{w}^T \mathbf{x}) = \mathbf{x} \)
+  $$
+
+   -
+
+   $$
+   \( \frac{d}{d\mathbf{w}}(||\mathbf{w}||^2) = 2\mathbf{w} \)
+  $$
+
+   -
+
+   $$
+  \( \frac{d}{dx}[\log(\sigma(x))] = 1 - \sigma(x) \)
+  $$
+
+   -
+
+   $$
+  \( \frac{\partial \sigma_i}{\partial z_k} = \sigma_i (\delta_{ik} - \sigma_k) \)
+  $$
+  
 
 ---
 
