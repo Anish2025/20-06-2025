@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Basic Derivative Definition
+## 1. Basic Derivative Definition   
 
 The derivative of a function \( f(x) \) measures how it changes with respect to \( x \). It is defined as:
 
@@ -15,6 +15,8 @@ $$
 - Describes the **rate of change**
 - Used to compute slopes and sensitivity in models
 - Core to **gradient descent** and **loss minimization**
+
+[Explanation](https://youtu.be/7K1sB05pE0A?si=z4_Lp8N0UmD-1uOT)
 
 ---
 
