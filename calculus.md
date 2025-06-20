@@ -165,11 +165,7 @@ $$
 \mathbf{f} : \mathbb{R}^n \rightarrow \mathbb{R}^m
 $$
 
-
-\( \mathbf{f} : \mathbb{R}^n \rightarrow \mathbb{R}^m \), 
-
-the Jacobian matrix is:
-
+Then the Jacobian matrix is defined as:
 
 $$
 J_{ij} = \frac{\partial f_i}{\partial x_j}
