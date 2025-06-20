@@ -107,6 +107,8 @@ $$
 \frac{d}{dx}[e^x] = e^x
 $$
 
+[Sigmoid, TenH, ReLU Explanation](https://www.youtube.com/watch?v=QBHj9xoPy_o)
+
 ---
 
 ## 4. Partial Derivatives
@@ -140,8 +142,6 @@ the rate of change of the loss with respect to the bias \( b \)
 $$
  \( \frac{\partial J}{\partial b} \)
 $$
-
-
 
 ---
 
