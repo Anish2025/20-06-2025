@@ -16,7 +16,7 @@ $$
 - Used to compute slopes and sensitivity in models
 - Core to **gradient descent** and **loss minimization**
 
-[Explanation](https://youtu.be/7K1sB05pE0A?si=z4_Lp8N0UmD-1uOT)
+[Basic Derivative Explanation](https://youtu.be/7K1sB05pE0A?si=z4_Lp8N0UmD-1uOT)
 
 ---
 
