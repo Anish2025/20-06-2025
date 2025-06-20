@@ -26,9 +26,7 @@ $$
 \frac{d}{dx}[x^n] = nx^{n-1}
 $$  
 
-$$
-\frac{d}{dx}[x^n] = nx^{n-1}
-$$
+
 Used for polynomial terms and cost functions.
 
 ### Chain Rule
@@ -37,9 +35,6 @@ $$
 \frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
 $$  
 
-$$
-\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
-$$  
 Essential for backpropagation in neural networks.
 
 ### Product Rule
@@ -47,10 +42,7 @@ Essential for backpropagation in neural networks.
 $$
 \frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
 $$  
-
-$$
-\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
-$$ 
+ 
 Used when two functions (like input × weight) are multiplied.
 
 ### Quotient Rule
@@ -58,6 +50,7 @@ Used when two functions (like input × weight) are multiplied.
 $$
 \frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}
 $$  
+
 Helpful when dividing functions in normalized outputs.
 
 ### Exponential Rule
@@ -73,6 +66,7 @@ Used in softmax, attention mechanisms, and regularization terms.
 $$
 \frac{d}{dx}[\ln(f(x))] = \frac{f'(x)}{f(x)}
 $$  
+
 Common in log-likelihood and entropy-based loss functions.
 
 ---
