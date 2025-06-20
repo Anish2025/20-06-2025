@@ -355,3 +355,12 @@ In neural networks:
 | log(σ(x))                           | d/dx = 1 - σ(x)                                                      |
 | softmax(σᵢ)                         | ∂σᵢ/∂zₖ = σᵢ(δᵢₖ - σₖ)                                               |
 
+
+1. **3Blue1Brown – Essence of Calculus (Video Series)**  
+   [https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)  
+   → Intuitive and visual understanding of differentiation and gradients.
+2. **Wikipedia – Calculus & Differential Calculus**  
+   [https://en.wikipedia.org/wiki/Differential_calculus](https://en.wikipedia.org/wiki/Differential_calculus)  
+   → General reference for notations and extended rules.
+
+
