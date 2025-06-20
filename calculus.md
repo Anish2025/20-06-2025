@@ -28,50 +28,7 @@ $$
 | Logarithmic    | \( \frac{d}{dx}[\ln(f(x))] = \frac{f'(x)}{f(x)} \) | Key in log-likelihood loss |
 
 ---
-## ⚙️ Fundamental Derivative Rules (with LaTeX Blocks)
 
-| Rule Type       | Formula | Description |
-|----------------|---------|-------------|
-| **Power Rule**     | 
-$$
-\frac{d}{dx}[x^n] = nx^{n-1}
-$$ 
-| For polynomial terms |
-
-| **Chain Rule**     | 
-$$
-\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
-$$ 
-| Backpropagation core |
-
-| **Product Rule**   | 
-$$
-\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
-$$ 
-| Needed for loss × activation |
-
-| **Quotient Rule**  | 
-$$
-\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}
-$$ 
-| Used with division terms |
-
-| **Exponential Rule** | 
-$$
-\frac{d}{dx}[e^{f(x)}] = e^{f(x)} \cdot f'(x)
-$$ 
-| Appears in softmax, regularization |
-
-| **Logarithmic Rule** | 
-$$
-\frac{d}{dx}[\ln(f(x))] = \frac{f'(x)}{f(x)}
-$$ 
-| Key in log-likelihood loss |
-
-
-
-
----
 
 ## 🔣 3. Derivatives of Key ML Functions
 
