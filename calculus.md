@@ -71,6 +71,8 @@ $$
 
 Common in log-likelihood and entropy-based loss functions.
 
+[Chain, Product, Quotient Rule and Higher Degree Derivatives Explanation](https://www.youtube.com/watch?v=4sTKcvYMNxk&t=165s)
+
 ---
 
 ## 3. Derivatives of Key ML Functions
