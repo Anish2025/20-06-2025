@@ -118,9 +118,26 @@ $$
 In ML, used to compute how the loss changes with respect to each parameter (weight or bias).
 
 **Example**:  
-If \( J(w, b) \) is a loss function, then:
-- \( \frac{\partial J}{\partial w} \): change in loss wrt weight
-- \( \frac{\partial J}{\partial b} \): change in loss wrt bias
+If is a loss function, then:
+
+$$
+\( J(w, b) \)
+$$
+
+the rate of change of the loss with respect to the weight \( w \)
+
+$$
+\( \frac{\partial J}{\partial w} \) 
+$$
+
+the rate of change of the loss with respect to the bias \( b \)
+
+
+$$
+ \( \frac{\partial J}{\partial b} \)
+$$
+
+
 
 ---
 
@@ -128,7 +145,13 @@ If \( J(w, b) \) is a loss function, then:
 
 The gradient is a vector of partial derivatives for multivariable functions.
 
-If \( f: \mathbb{R}^n \rightarrow \mathbb{R} \), then:
+If 
+
+$$
+\( f: \mathbb{R}^n \rightarrow \mathbb{R} \)
+$$
+
+, then:
 
 $$
 \nabla f(\mathbf{x}) = 
@@ -196,7 +219,13 @@ $$
 
 ### Dot Product Derivative
 
-If \( f(\mathbf{w}) = \mathbf{w}^T \mathbf{x} \), then:
+If 
+
+$$
+\( f(\mathbf{w}) = \mathbf{w}^T \mathbf{x} \)
+$$
+
+, then:
 
 $$
 \frac{d}{d\mathbf{w}} = \mathbf{x}
