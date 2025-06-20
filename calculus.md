@@ -284,6 +284,7 @@ Used in:
 - Classification gradients
 
 [L2 Norm Explanation & Proof](https://youtu.be/uu2X47cSLmM?si=CbNtkgO16gekCOyj)
+
 [Softmax Derivative Explanation & Proof](https://medium.com/data-science/derivative-of-the-softmax-function-and-the-categorical-cross-entropy-loss-ffceefc081d1)
 
 ---
@@ -303,6 +304,7 @@ In neural networks:
 - **Backward pass** computes gradients layer-by-layer using chain rule
 
 [Backpropagation Explanation](https://youtu.be/tIeHLnjs5U8?si=qRgpIG6dDkPfhSlt)
+
 [Proof](https://www.cs.swarthmore.edu/~meeden/cs81/s10/BackPropDeriv.pdf)
 
 ---
