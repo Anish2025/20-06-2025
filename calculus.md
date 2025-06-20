@@ -191,7 +191,7 @@ $$
 \( J(\theta) \): loss function
 $$
 
-[Gradient Vector Explanation](https://www.youtube.com/watch?v=QQPz3eXXgQI&t=676s)
+[Gradient Vector Explanation](https://youtu.be/yXD5IlDstNk?si=fMG-JYLjLbPWBEmX)
 
 ---
 
