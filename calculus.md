@@ -25,6 +25,10 @@ $$
 $$
 \frac{d}{dx}[x^n] = nx^{n-1}
 $$  
+
+$$
+\frac{d}{dx}[x^n] = nx^{n-1}
+$$
 Used for polynomial terms and cost functions.
 
 ### Chain Rule
