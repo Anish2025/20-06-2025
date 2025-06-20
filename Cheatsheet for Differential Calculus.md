@@ -378,7 +378,7 @@ In neural networks:
 2. **Wikipedia – Calculus & Differential Calculus**  
    [https://en.wikipedia.org/wiki/Differential_calculus](https://en.wikipedia.org/wiki/Differential_calculus)  
    → General reference for notations and extended rules.
-3.**MIT OpenCourseWare – Single Variable Calculus**  
+3. **MIT OpenCourseWare – Single Variable Calculus**  
    [https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010)  
    → Foundation of derivatives, rules, and real-world interpretation.
 
