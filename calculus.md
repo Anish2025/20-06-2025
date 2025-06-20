@@ -160,11 +160,16 @@ Where:
 The Jacobian generalizes the gradient to vector-valued functions.
 
 For 
+
 $$
-\( \mathbf{f} : \mathbb{R}^n \rightarrow \mathbb{R}^m \)
+\mathbf{f} : \mathbb{R}^n \rightarrow \mathbb{R}^m
 $$
 
-, the Jacobian matrix is:
+
+\( \mathbf{f} : \mathbb{R}^n \rightarrow \mathbb{R}^m \), 
+
+the Jacobian matrix is:
+
 
 $$
 J_{ij} = \frac{\partial f_i}{\partial x_j}
