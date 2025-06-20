@@ -144,6 +144,7 @@ $$
 $$
 
 [Partial Derivatives Explanation](https://youtu.be/KnVNFj53Eq4?si=9Vv9P-78SDnl_0i_)
+
 ---
 
 ## 5. Gradient Vector ( ∇f )
@@ -190,6 +191,8 @@ $$
 \( J(\theta) \): loss function
 $$
 
+[Gradient Vector Explanation](https://www.youtube.com/watch?v=QQPz3eXXgQI&t=676s)
+
 ---
 
 ## 6. Jacobian Matrix
@@ -212,6 +215,8 @@ Used in:
 - Multivariate output models
 - Neural network layer transformations
 - Vectorized backpropagation
+  
+[Jacobian Matrix Explanation](https://youtu.be/bohL918kXQk?si=Fi70lh06SntgRLsx)
 
 ---
 
@@ -226,6 +231,8 @@ $$
 - Square matrix: \( n \times n \)
 - Helps in **Newton’s Method**, convexity checks
 - Not commonly computed in deep learning due to high cost
+
+[Hessian Matrix Explanation](https://youtu.be/LbBcuZukCAw?si=F0N-NVd04mINABA6)
 
 ---
 
@@ -291,6 +298,8 @@ $$
 In neural networks:
 - **Forward pass** computes activations
 - **Backward pass** computes gradients layer-by-layer using chain rule
+
+[Backpropagation Explanation](https://youtu.be/tIeHLnjs5U8?si=qRgpIG6dDkPfhSlt)
 
 ---
 
