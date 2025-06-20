@@ -36,6 +36,9 @@ Used for polynomial terms and cost functions.
 $$
 \frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
 $$  
+$$
+\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
+$$  
 Essential for backpropagation in neural networks.
 
 ### Product Rule
@@ -43,6 +46,9 @@ Essential for backpropagation in neural networks.
 $$
 \frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
 $$  
+$$
+\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
+$$ 
 Used when two functions (like input × weight) are multiplied.
 
 ### Quotient Rule
